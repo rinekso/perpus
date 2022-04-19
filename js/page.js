@@ -1,0 +1,25 @@
+$(document).ready(function(){
+	$("#buk").load("sub-buku.php");
+	$("#buk").hide();
+	$("#bb").click(function(){
+		$("#buk").slideToggle();
+	});
+	$("#buk").mouseleave(function(){
+		$("#buk").slideUp();
+	});
+	$("#akun").load("sub-akun.php");
+	$("#akun").hide();
+	$("#aa").click(function(){
+		$("#akun").slideToggle();
+	});
+	$("#akun").mouseleave(function(){
+		$("#akun").slideUp();
+	});
+	$(".menu_l").hide();
+	$("#menu2_l").click(function(){
+		$(".menu_l").slideToggle();
+	});
+	$(".isi").mouseover(function(){
+		$(".menu_l").slideUp();
+	});
+});
